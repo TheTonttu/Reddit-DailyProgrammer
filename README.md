@@ -1,5 +1,5 @@
 # Reddit/r/DailyProgrammer challenges
-Contains my implementations of [/r/DailyProgrammer](http://www.reddit.com/r/dailyrrogrammer) challenges.
+Contains my implementations of [/r/DailyProgrammer](http://www.reddit.com/r/dailyprogrammer) challenges.
 
 Feedback is welcome as that's why this repo was created in the first place. :-)
 
