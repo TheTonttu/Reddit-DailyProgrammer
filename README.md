@@ -15,3 +15,6 @@ Trying to improve my programming skills, primarily C#.
 [C#](/CSharp/Weekly24/RampNumbers)
 [tests](/CSharp/Weekly24/RampNumbers.Test)
 [benchmarks](/CSharp/Weekly24/RampNumbers.Benchmark)
+- [To base n](http://www.reddit.com/r/dailyprogrammer/comments/3o4tpz/weekly_24_mini_challenges/cvu1xu3) by casualfrog
+[C#](/CSharp/Weekly24/BaseN)
+[tests](/CSharp/Weekly24/BaseN.Test)
