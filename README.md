@@ -11,3 +11,5 @@ Trying to improve my programming skills, primarily C#.
 ### [Weekly #24 - Mini challenges](http://www.reddit.com/r/dailyprogrammer/comments/3o4tpz/weekly_24_mini_challenges/)
 - [Grab](http://www.reddit.com/r/dailyprogrammer/comments/3o4tpz/weekly_24_mini_challenges/cvu1763) by adrian17
 [C#](/CSharp/Weekly24/Grab)
+- [Ramp numbers](http://www.reddit.com/r/dailyprogrammer/comments/3o4tpz/weekly_24_mini_challenges/cvudq0c) by Atrolantra
+[C#](/CSharp/Weekly24/RampNumbers) [tests](/CSharp/Weekly24/RampNumber.Test) [benchmarks](/CSharp/Weekly24/RempNumbers.Benchmark)

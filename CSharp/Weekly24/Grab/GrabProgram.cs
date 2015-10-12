@@ -29,7 +29,7 @@ namespace Tonttu.Reddit.DailyProgrammer.Weekly24.Grab {
     /// <para>story.txt: 127: Markings on the wall.</para>
     /// </example>
     /// </summary>
-    class Program {
+    class GrabProgram {
 
         static void Main(string[] args) {
             // TODO: Separate output printing and data collecting.

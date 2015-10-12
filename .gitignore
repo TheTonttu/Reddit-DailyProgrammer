@@ -23,6 +23,15 @@ $RECYCLE.BIN/
 [Oo]bj/
 *.suo
 *.user
+# VSPerformance
+*.vsp
+*.psess
+# Ignore NuGet Packages
+*.nupkg
+# Ignore the packages folder
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
 
 # =========================
 # Operating System Files
