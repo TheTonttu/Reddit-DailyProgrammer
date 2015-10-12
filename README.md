@@ -14,4 +14,4 @@ Trying to improve my programming skills, primarily C#.
 - [Ramp numbers](http://www.reddit.com/r/dailyprogrammer/comments/3o4tpz/weekly_24_mini_challenges/cvudq0c) by Atrolantra
 [C#](/CSharp/Weekly24/RampNumbers)
 [tests](/CSharp/Weekly24/RampNumbers.Test)
-[benchmarks](/CSharp/Weekly24/RempNumbers.Benchmark)
+[benchmarks](/CSharp/Weekly24/RampNumbers.Benchmark)
