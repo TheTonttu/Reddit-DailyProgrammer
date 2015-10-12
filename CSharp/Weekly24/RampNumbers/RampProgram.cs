@@ -10,6 +10,8 @@ namespace Tonttu.Reddit.DailyProgrammer.Weekly24.RampNumbers {
     /// Ramp numbers by Atrolantra
     /// https://www.reddit.com/r/dailyprogrammer/comments/3o4tpz/weekly_24_mini_challenges/cvudq0c
     /// 
+    /// A ramp number is a number whose digits from left to right either only rise or stay the same. 1234 is a ramp number as is 1124. 1032 is not.
+    /// 
     /// Given: A positive integer, n.
     /// Output: The number of ramp numbers less than n.
     /// Example input: 123
