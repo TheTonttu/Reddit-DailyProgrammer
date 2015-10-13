@@ -22,6 +22,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseN", "BaseN\BaseN.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseN.Test", "BaseN.Test\BaseN.Test.csproj", "{57BA0317-10BA-4301-A7AB-B3F57B2B5895}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneTimePadGenerator", "OneTimePadGenerator\OneTimePadGenerator.csproj", "{B6B76BD3-9A21-454E-B52F-05BD2C026D91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneTimePadGenerator.Test", "OneTimePadGenerator.Test\OneTimePadGenerator.Test.csproj", "{A22FCA61-537C-4607-8BB1-1C95E93C8348}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +56,14 @@ Global
 		{57BA0317-10BA-4301-A7AB-B3F57B2B5895}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57BA0317-10BA-4301-A7AB-B3F57B2B5895}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57BA0317-10BA-4301-A7AB-B3F57B2B5895}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6B76BD3-9A21-454E-B52F-05BD2C026D91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B76BD3-9A21-454E-B52F-05BD2C026D91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B76BD3-9A21-454E-B52F-05BD2C026D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B76BD3-9A21-454E-B52F-05BD2C026D91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A22FCA61-537C-4607-8BB1-1C95E93C8348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A22FCA61-537C-4607-8BB1-1C95E93C8348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22FCA61-537C-4607-8BB1-1C95E93C8348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A22FCA61-537C-4607-8BB1-1C95E93C8348}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
