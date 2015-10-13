@@ -8,7 +8,7 @@ using Tonttu.Reddit.DailyProgrammer.Weekly24.BaseN;
 namespace BaseN.Test {
     public class BaseConverterTests {
 
-        private static readonly object[] Source_NumberConvertsToBaseDigits = {
+        private static readonly object[] Source_BaseConverter_ConvertsCorrectly = {
             new object[] {0, 2, new Number(new List<int> { 0 }, 2)},
             new object[] {0, 10, new Number(new List<int> { 0 }, 10)},
             new object[] {1, 2, new Number(new List<int> { 1 }, 2)},
@@ -37,8 +37,8 @@ namespace BaseN.Test {
             new object[] {-36, 36, new Number(new List<int> { 1, 0 }, 36, true)}
         };
 
-        [Test, TestCaseSource("Source_NumberConvertsToBaseDigits")]
-        public void ConvertsCorrectly(long number, int baseNum, Number expectedResult) {
+        [Test, TestCaseSource("Source_BaseConverter_ConvertsCorrectly")]
+        public void BaseConverter_ConvertsCorrectly(long number, int baseNum, Number expectedResult) {
             Number result = BaseConverter.Convert(number, baseNum);
 
             Assert.AreEqual(expectedResult.Digits, result.Digits, "Digits diff");

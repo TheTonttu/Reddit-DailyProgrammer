@@ -30,7 +30,7 @@ namespace BaseN.Test {
         [TestCase(1000, 2, Result = 1111101000)]
         [TestCase(1000, 5, Result = 13000)]
         [TestCase(1000, 10, Result = 1000)]
-        public long ConvertsCorrectly(int number, int toBase) {
+        public long BaseConverterProto_ConvertsCorrectly(int number, int toBase) {
             return converter.Convert(number, toBase);
         }
     }

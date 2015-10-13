@@ -19,7 +19,7 @@ namespace RampNumbers.Test {
         [TestCase(999, Result = 3)]
         [TestCase(1000, Result = 4)]
         [TestCase(1010101010101010101, Result = 19)]
-        public int DigitCountIsCalculatedCorrectly(long number) {
+        public int DerpMath_DigitCountIsCalculatedCorrectly(long number) {
             return DerpMath.DigitCount(number);
         }
 
@@ -30,7 +30,7 @@ namespace RampNumbers.Test {
         [TestCase(9, Result = new byte[] { 9 })]
         [TestCase(10, Result = new byte[] { 1, 0 })]
         [TestCase(100, Result = new byte[] { 1, 0, 0 })]
-        public byte[] DigitsExtracted(long number) {
+        public byte[] DerpMath_DigitsExtracted(long number) {
             return DerpMath.DigitsArray(number);
         }
 
@@ -48,7 +48,7 @@ namespace RampNumbers.Test {
         [TestCase(1223445, Result = true)]
         [TestCase(1223435, Result = false)]
         [TestCase(1223453, Result = false)]
-        public bool RampNumberCheckIsCorrect(long number) {
+        public bool DerpMath_RampNumberCheckIsCorrect(long number) {
             bool isRampNumber = DerpMath.IsRampNumber(number);
             bool isRampNumberFaster = DerpMath.IsRampNumberFaster(number);
             bool isRampNumberStrManip = DerpMath.IsRampNumberStringManipulation(number);
