@@ -6,18 +6,25 @@ Feedback is welcome as that's why this repo was created in the first place. :-)
 ## Motivation
 Trying to improve my programming skills, primarily C#.
 
-## Implementations
+## Challenges
+Weekly challenges are on their own sections below.
+
+| #*  | Name | Submitter | Impl.           |
+| --- | :--- | :-------- | :-------------- |
+| [1.3](http://www.reddit.com/r/dailyprogrammer/comments/pii6j/difficult_challenge_1/) | Reversed guessing game | nottoobadguy | [C#](/CSharp/Challenge1/Difficult) |
+
+*x.1=easy,
+x.2=intermediate,
+x.3=difficult
+
+## Weekly challenges
 
 ### [Weekly #24 - Mini challenges](http://www.reddit.com/r/dailyprogrammer/comments/3o4tpz/weekly_24_mini_challenges/)
-- [Grab](http://www.reddit.com/r/dailyprogrammer/comments/3o4tpz/weekly_24_mini_challenges/cvu1763) by adrian17
-[C#](/CSharp/Weekly24/Grab)
-- [OTP generator](http://www.reddit.com/r/dailyprogrammer/comments/3o4tpz/weekly_24_mini_challenges/cvu1z9b) by BaronPaprika
-[C#](/CSharp/Weekly24/OneTimePadGenerator)
-[tests](/CSharp/Weekly24/OneTimePadGenerator.Test)
-- [Ramp numbers](http://www.reddit.com/r/dailyprogrammer/comments/3o4tpz/weekly_24_mini_challenges/cvudq0c) by Atrolantra
-[C#](/CSharp/Weekly24/RampNumbers)
-[tests](/CSharp/Weekly24/RampNumbers.Test)
-[benchmarks](/CSharp/Weekly24/RampNumbers.Benchmark)
-- [To base n](http://www.reddit.com/r/dailyprogrammer/comments/3o4tpz/weekly_24_mini_challenges/cvu1xu3) by casualfrog
-[C#](/CSharp/Weekly24/BaseN)
-[tests](/CSharp/Weekly24/BaseN.Test)
+
+| Name | Submitter | Impl. | Tests | Benchmarks |
+| ---- | --------- |------ | ----- | ---------- |
+| [Grab](http://www.reddit.com/r/dailyprogrammer/comments/3o4tpz/weekly_24_mini_challenges/cvu1763) | adrian17 | [C#](/CSharp/Weekly24/Grab) |
+| [OTP generator](http://www.reddit.com/r/dailyprogrammer/comments/3o4tpz/weekly_24_mini_challenges/cvu1z9b) | BaronPaprika | [C#](/CSharp/Weekly24/OneTimePadGenerator) | [C#](/CSharp/Weekly24/OneTimePadGenerator.Test) |
+| [Ramp numbers](http://www.reddit.com/r/dailyprogrammer/comments/3o4tpz/weekly_24_mini_challenges/cvudq0c) | Atrolantra | [C#](/CSharp/Weekly24/RampNumbers) | [C#](/CSharp/Weekly24/RampNumbers.Test) | [C#](/CSharp/Weekly24/RampNumbers.Benchmark) |
+| [To base n](http://www.reddit.com/r/dailyprogrammer/comments/3o4tpz/weekly_24_mini_challenges/cvu1xu3) | casualfrog | [C#](/CSharp/Weekly24/BaseN) | [C#](/CSharp/Weekly24/BaseN.Test) |
+
