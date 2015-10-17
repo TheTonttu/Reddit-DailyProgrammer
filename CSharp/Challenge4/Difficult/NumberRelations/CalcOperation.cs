@@ -41,19 +41,23 @@ namespace Tonttu.Reddit.DailyProgrammer.Challenge4.NumberRelations {
         }
 
         public override string ToString() {
+            return String.Format("{0} {1} {2} = {3}", A, OperatorChar(), B, Result);
+        }
+
+        private char OperatorChar() {
             switch (Operation) {
                 case Operation.Addition:
-                    return String.Format("{0} + {1} = {2}", A, B, Result);
+                    return '+';
                 case Operation.Subtraction:
-                    return String.Format("{0} - {1} = {2}", A, B, Result);
+                    return '-';
                 case Operation.Multiplication:
-                    return String.Format("{0} * {1} = {2}", A, B, Result);
+                    return '*';
                 case Operation.Division:
-                    return String.Format("{0} / {1} = {2}", A, B, Result);
+                    return '/';
                 case Operation.Modulo:
-                    return String.Format("{0} % {1} = {2}", A, B, Result);
+                    return '%';
                 default:
-                    return String.Empty;
+                    throw new NotImplementedException(String.Format("Operator char for {0} not implemented", Operation));
             }
         }
     }
