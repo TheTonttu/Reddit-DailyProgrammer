@@ -1,24 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Tonttu.Reddit.DailyProgrammer.Challenge4.NumberRelations {
     public class CalcOperation {
-        public long A { get; private set; }
-        public long B { get; private set; }
+        public double A { get; private set; }
+        public double B { get; private set; }
 
         public Operation Operation { get; private set; }
 
-        public long Result { get; private set; }
+        public double Result { get; private set; }
 
-        public CalcOperation(long a, Operation op, long b) {
+        public CalcOperation(double a, double b, Operation op) {
             A = a;
             B = b;
             Operation = op;
 
-            long result;
+            double result;
             switch (op) {
                 case Operation.Addition:
                     result = a + b;
@@ -33,6 +29,9 @@ namespace Tonttu.Reddit.DailyProgrammer.Challenge4.NumberRelations {
                     result = b == 0
                         ? 0
                         : a / b;                  
+                    break;
+                case Operation.Modulo:
+                    result = a % b;
                     break;
                 default:
                     result = 0;
@@ -51,6 +50,8 @@ namespace Tonttu.Reddit.DailyProgrammer.Challenge4.NumberRelations {
                     return String.Format("{0} * {1} = {2}", A, B, Result);
                 case Operation.Division:
                     return String.Format("{0} / {1} = {2}", A, B, Result);
+                case Operation.Modulo:
+                    return String.Format("{0} % {1} = {2}", A, B, Result);
                 default:
                     return String.Empty;
             }
@@ -61,6 +62,7 @@ namespace Tonttu.Reddit.DailyProgrammer.Challenge4.NumberRelations {
         Addition,
         Subtraction,
         Multiplication,
-        Division
+        Division,
+        Modulo
     }
 }
