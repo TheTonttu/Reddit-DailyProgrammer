@@ -30,46 +30,47 @@ namespace Tonttu.Reddit.DailyProgrammer.Challenge5.FindAnagrams {
             }
 
             string[] lines = File.ReadAllLines(filePath);
-            int anagramMatchCount = 0;
-            // TODO: Do not count matches twice. e.g. test = sets; sets = test
+
+            var matches = new Dictionary<string, List<string>>();
             for (int i = 0; i < lines.Length; i++) {
                 string line = lines[i];
-                string sorted = CopyLettersNumbersAndSort(line);
+                if (String.IsNullOrWhiteSpace(line)) continue;
 
-                int lineMatchCount = 0;
-                for (int j = 0; j < lines.Length; j++) {
-                    if (i == j) continue;
-                    string otherLine = lines[j];
-                    string otherSorted = CopyLettersNumbersAndSort(otherLine);
-                    //Console.WriteLine("comparison: '{0}', '{1}'", sorted, otherSorted);
-                    if (sorted.Length != otherSorted.Length) continue;
+                string anagramKey = CopyLettersNumbersAndSort(line);
 
-                    if (String.Equals(sorted, otherSorted, StringComparison.OrdinalIgnoreCase)) {
-                        lineMatchCount++;
-                        //Console.WriteLine("match: '{0}', '{1}'", line, otherLine);
+                List<string> anagrams;
+                if (!matches.TryGetValue(anagramKey, out anagrams)) {
+                    anagrams = new List<string>();
+                    matches.Add(anagramKey, anagrams);
+                }
+                anagrams.Add(line);
+            }
+
+            int anagramMatchCount = 0;
+            foreach (var anagrams in matches.Values) {
+                if (anagrams.Count > 1) {
+                    // 2 => 1 match; 3 => 3 matches; 4 => (1+2+3=)6 matches
+                    for (int i = 1; i < anagrams.Count; i++) {
+                        anagramMatchCount += i;
                     }
-                }
-                anagramMatchCount += lineMatchCount;
-                if (lineMatchCount > 0) {
-                    Console.WriteLine("'{0}' matches: {1}", line, lineMatchCount);
+                    Console.WriteLine(String.Join(" <=> ", anagrams));
+
                 }
             }
-            if (anagramMatchCount > 0) {
-                Console.WriteLine();
-            }
-            Console.WriteLine("Total matches: {0}", anagramMatchCount);
+            Console.WriteLine("Anagram matches: {0}", anagramMatchCount);
         }
 
         private static string CopyLettersNumbersAndSort(string str) {
             char[] origChars = new char[str.Length];
-            int charCount = 0;
+            int length = 0;
             foreach (char c in str) {
                 if (Char.IsLetter(c) || Char.IsNumber(c)) {
-                    origChars[charCount] = Char.IsUpper(c) ? Char.ToLower(c) : c;
-                    charCount++;
+                    origChars[length] = Char.IsUpper(c)
+                        ? Char.ToLower(c)
+                        : c;
+                    length++;
                 }
             }
-            int length = charCount;
             char[] chars = new char[length];
             Array.Copy(origChars, chars, length);
             Array.Sort(chars);

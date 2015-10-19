@@ -4,15 +4,23 @@ Man
 nim
 nem
 narf
+rat
+
+tar
+trap
+part
 fart
 nam
 Sass ass
 mann
 test
+rap
 sets
 donkey
+par
 monkey
 branch
+moped
 Ni!
 In
 ass sass
@@ -22,3 +30,9 @@ in sass as
 420 blaze it
 bit laze 240
 raft
+abc
+cba
+
+bac
+cab
+bca
