@@ -1,5 +1,5 @@
 # Reddit/r/DailyProgrammer challenges
-Contains my implementations of [/r/DailyProgrammer](http://www.reddit.com/r/dailyprogrammer) challenges.
+Contains my implementations of [/r/DailyProgrammer](http://www.reddit.com/r/dailyprogrammer) challenges. All challenge posts can be found [here](https://www.reddit.com/r/dailyprogrammer/wiki/challenges).
 
 Feedback is welcome as that's why this repo was created in the first place. :-)
 
@@ -11,6 +11,7 @@ Weekly challenges are on their own sections below.
 
 | #*  | Name | Submitter | Impl.           | Benchmarks |
 | --- | :--- | :-------- | :-------------- | :--------- |
+| [1.1](https://www.reddit.com/r/dailyprogrammer/comments/pih8x/easy_challenge_1/) | Name age nick | nottoobadguy | [C#](/CSharp/Challenge1/Easy/NameAgeNick) |
 | [1.3](http://www.reddit.com/r/dailyprogrammer/comments/pii6j/difficult_challenge_1/) | Reversed guessing game | nottoobadguy | [C#](/CSharp/Challenge1/Difficult/ReversedGuessNumber) |
 | [2.3](http://www.reddit.com/r/dailyprogrammer/comments/pjsdx/difficult_challenge_2/) | Stopwatch | nottoobadguy | [C#](/CSharp/Challenge2/Difficult/StopwatchApp) |
 | [3.3](http://www.reddit.com/r/dailyprogrammer/comments/pkwgf/2112012_challenge_3_difficult/) | Scrambled words | nottoobadguy | [C#](/CSharp/Challenge3/Difficult/ScrambledWords) | [C#](/CSharp/Challenge3/Difficult/ScrambledWords.Benchmark) |
